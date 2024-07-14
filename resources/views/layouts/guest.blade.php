@@ -15,18 +15,19 @@
             background: url({{ asset('images/background.jpeg') }}) no-repeat 50%/cover;
         }
     </style>
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="font-sans text-gray-900 antialiased">
-@include('layouts.navigation')
-
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-        {{ $slot }}
+    @include('layouts.navigation')
+    <div class="container d-flex flex-column justify-content-center align-items-center bg-light" style="min-height:80vh!important">
+        <div class="card w-100" style="max-width: 24rem;">
+            <div class="card-body">
+                {{ $slot }}
+            </div>
+        </div>
     </div>
-</div>
-@include('layouts.footer')
-
+    @include('layouts.footer')
 </body>
 </html>

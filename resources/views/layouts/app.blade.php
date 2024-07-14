@@ -15,10 +15,9 @@
                 background: url({{ asset('images/background.jpeg') }}) no-repeat 50%/cover;
             }
         </style>
+        <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">

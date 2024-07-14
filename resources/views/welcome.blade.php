@@ -1,42 +1,25 @@
 <x-app-layout>
     <section class="section__main main">
         <div class="main__container">
-            <div class="main__wrapper"><h1 class="main__title def-title">ДОСТАВКА ТОВАРОВ ИЗ КИТАЯ ПО САМЫМ БЫСТРЫМ
-                    СРОКАМ</h1>
-                <p class="main__text">Регистрируйся и получи свой код склада в Китае. Выкупай товары Оптом и Розницу
-                    самостоятельно или с помощью нашей компании, отслеживай их по трек номеру. Мы доставим ваши
-                    товары в Кыргызстан безопасно за самый короткий срок!</p>
-{{--                <a class="main__btn" href="https://ades.kg/tracking">ОТСЛЕЖИВАНИЕ</a>--}}
+            <div class="main__wrapper">
+                <h1 class="main__title def-title">Мы предлагаем удобную и надежную доставку товаров из Китая в Бишкек. </h1>
+                <p class="main__text"> Наша компания специализируется на предоставлении комплексных логистических решений, чтобы вы могли получать свои заказы быстро и без лишних хлопот.</p>
+                <p class="main__text">Для получения адреса просто пройдите</p>
+                <a class="main__btn" href="{{ route('register') }}"> регистрацию</a>
             </div>
         </div>
     </section>
     <section class="services">
         <div class="services__container">
             <div class="services__wrapper">
-                <h2 class="services__title def-title">Выкуп товара с китайских сайтов</h2>
-                <h3 class="services__subtitle">Работаем со всеми известными китайскими маркетплейсами</h3>
-                <ul class="services__list">
-                    <li class="services__items">Pinduoduo</li>
-                    <li class="services__items">Poizon</li>
-                    <li class="services__items">Taobao</li>
-                    <li class="services__items">1688 и.д.</li>
-                </ul>
-                <p>
-                    Лендинг "Получите свой личный склад в Китае"
-
-                    1. Вступительная секция:
-
-                    Заголовок: "Ваш личный склад в Китае сегодня!"
-                    Eagle express cargo
-                    Краткое описание: "Регистрируйтесь сейчас и получите персональный номер и адрес нашего склада в
-                    Китае для удобных покупок и быстрой доставки."
-                </p>
-                <p class="services__text">Поможем зарегистрироваться на нужном сайте , найти товар у проверенного
-                    поставщика, , оформить заказ и произвести оплату.</p>
+                <h2 class="services__title def-title">Выкупим любой товар с китайских сайтов бесплатно</h2>
+                <h3 class="services__subtitle">Pinduoduo, Poizon, Taobao, 1688 и.д.</h3>
+                <h3 class="services__subtitle">Бесплатная доставка по городу Бишкек</h3>
+                <br>
                 <div class="services__blocks">
                     <div class="services__inner">
                         <div class="services__img-wrapper"><img
-                                    src="{{ asset('images/box2.svg') }}" alt=""></div>
+                                    src="{{ asset('storage/china.png') }}" alt=""></div>
                         <div class="services__text-wrapper"><h3 class="services__inner-title">Без знания
                                 китайского</h3>
                             <p class="services__inner-text">Поможем оформить заказ. заполнить правильно адрес
@@ -44,23 +27,34 @@
                     </div>
                     <div class="services__inner">
                         <div class="services__img-wrapper"><img
-                                    src="{{ asset('images/time.svg') }}" alt=""></div>
+                                    src="{{ asset('storage/truck.png') }}" alt=""></div>
                         <div class="services__text-wrapper"><h3 class="services__inner-title">Доставим за 7-12 дней
                                 со дня поступления на склад в Китае</h3>
-                            <p class="services__inner-text">Более 90 % клиентов имеют проблемы со сроками доставки,
-                                но наше карго поможет получить ваши товары безопасно и быстро</p></div>
+                            <p class="services__inner-text">Цена за килограмм 3.3$ (в розницу)</p></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="why-we">
-        <div class="why-we__container"><h2 class="why-we__title def-title">Почему стоит выбрать нас ?</h2>
-            <div class="why-we__text-wrapper"><p class="why-we__text def-text">Если вы уже работаете или планируете
-                    работать с маркетплейсами данная услуга именно для вас. ADES CARGO EXPRESS доставят любой ваш груз в
-                    любом размере и количестве. Взять на себя всю работу начиная с проверки товара, обрешетки по желанию
-                    клиента, таможенного оформления документов и сертификатов, до доставки товара в Кыргызстан, его
-                    переупаковки, хранения и создания поставок на наш склад в Бишкеке.</p></div>
+        <div class="why-we__container">
+            <h2 class="why-we__title def-title">Как сделать заказ?</h2>
+            <div class="why-we__text-wrapper">
+                <p class="why-we__text def-text">
+                    1.  Получите ваш код и адрес
+                    - Заполните форму на сайте и мы выдадим вам адрес в китае и ваш личный код
+                </p>
+                <p class="why-we__text def-text">
+                    2. Посылки
+                    - Далее вы можете заказывать товары на выданный адрес
+                    Или же попросить оформить заказ наших менеджеров
+                </p>
+                <p class="why-we__text def-text">
+                    3. Получение товара
+                        - Получите ваш заказ в удобное для вас время и место.
+                </p>
+                <h2 class="why-we__title def-title">Для оптовых заказов цена договорная</h2>
+            </div>
             <div class="why-we__img-wrapper">
                 <img class="why-we__img" src="{{ asset('storage/fastdelivery.jpeg') }}" alt="">
             </div>

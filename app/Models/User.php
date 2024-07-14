@@ -56,4 +56,9 @@ class User extends Authenticatable
             $user->code = $lastUser ? $lastUser->code + 1 : 1;
         });
     }
+
+    public function getCode()
+    {
+        return sprintf('%03d', $this->code);
+    }
 }
