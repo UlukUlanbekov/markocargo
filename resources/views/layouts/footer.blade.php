@@ -4,7 +4,7 @@
             <li class="footer__blocks">
                 <a class="footer__logo" href="/">
                     <img class="header__logo-img"
-                         src="{{ asset('storage/updatedlogo.png') }}"
+                         src="{{ asset('images/updatedlogo.png') }}"
                          alt="Логотип">
                 </a>
             </li>
