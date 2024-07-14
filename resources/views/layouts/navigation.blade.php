@@ -3,7 +3,7 @@
         <nav class="header__nav">
             <a class="header__logo" href="/">
                 <img class="header__logo-img"
-                     src="{{ asset('storage/updatedlogo.png') }}"
+                     src="{{ asset('images/updatedlogo.png') }}"
                      alt="Логотип">
             </a>
             <div class="header__wrapper">

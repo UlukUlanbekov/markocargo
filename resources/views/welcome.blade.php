@@ -19,7 +19,7 @@
                 <div class="services__blocks">
                     <div class="services__inner">
                         <div class="services__img-wrapper"><img
-                                    src="{{ asset('storage/china.png') }}" alt=""></div>
+                                    src="{{ asset('images/china.png') }}" alt=""></div>
                         <div class="services__text-wrapper"><h3 class="services__inner-title">Без знания
                                 китайского</h3>
                             <p class="services__inner-text">Поможем оформить заказ. заполнить правильно адрес
@@ -27,7 +27,7 @@
                     </div>
                     <div class="services__inner">
                         <div class="services__img-wrapper"><img
-                                    src="{{ asset('storage/truck.png') }}" alt=""></div>
+                                    src="{{ asset('images/truck.png') }}" alt=""></div>
                         <div class="services__text-wrapper"><h3 class="services__inner-title">Доставим за 7-12 дней
                                 со дня поступления на склад в Китае</h3>
                             <p class="services__inner-text">Цена за килограмм 3.3$ (в розницу)</p></div>
@@ -56,7 +56,7 @@
                 <h2 class="why-we__title def-title">Для оптовых заказов цена договорная</h2>
             </div>
             <div class="why-we__img-wrapper">
-                <img class="why-we__img" src="{{ asset('storage/fastdelivery.jpeg') }}" alt="">
+                <img class="why-we__img" src="{{ asset('images/fastdelivery.jpeg') }}" alt="">
             </div>
 {{--            <ul class="why-we__list">--}}
 {{--                <li class="why-we__columns">--}}
