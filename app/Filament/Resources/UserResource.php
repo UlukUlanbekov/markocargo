@@ -30,7 +30,7 @@ class UserResource extends Resource
             ->schema([
                 TextInput::make('name')->required(),
                 TextInput::make('phone')->required(),
-                TextInput::make('email')->required()->unique(),
+                TextInput::make('email')->required(),
                 DatePicker::make('email_verified_at')->nullable(),
                 TextInput::make('password')->required()->password(),
             ]);
