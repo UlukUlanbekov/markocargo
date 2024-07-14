@@ -42,7 +42,7 @@ class UserResource extends Resource
             ->columns([
                 TextColumn::make('name')->searchable(),
                 TextColumn::make('email')->searchable(),
-                TextColumn::make('email_verified_at')->date(),
+                TextColumn::make('phone')->searchable(),
                 TextColumn::make('code')->searchable(),
             ])
             ->filters([
